@@ -5,6 +5,20 @@
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "types": "./src/index.ts"
+    },
+    "./structure": {
+      "import": "./src/structure.ts",
+      "types": "./src/structure.ts"
+    },
+    "./dom": {
+      "import": "./src/dom.ts",
+      "types": "./src/dom.ts"
+    }
+  },
   "scripts": {
     "dev": "vite --port 5181",
     "typecheck": "tsc --noEmit",
